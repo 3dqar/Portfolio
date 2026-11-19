@@ -23,7 +23,7 @@
 .kraunama-linija{height:2px;background:#243d23;overflow:hidden}
 .kraunama-linija:after{content:'';display:block;width:0;height:100%;background:#b6ff3b;box-shadow:0 0 18px #b6ff3b;animation:ikrovimas 1s ease forwards}
 @keyframes ikrovimas{to{width:100%}}
-#fono-daleles{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:-1;opacity:.7}
+#fono-daleles{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:0;opacity:.5}main{position:relative;z-index:1}
 @media(prefers-reduced-motion:reduce){#kraunama{display:none}#fono-daleles{display:none}}
 </style></head>
 <body><div id="kraunama" aria-hidden="true"><div class="kraunama-vidus"><div class="kraunama-titulas">3DQA_</div><div class="kraunama-statusas" id="kraunama-statusas">PALEIDŽIAMA...</div><div class="kraunama-linija"></div></div></div><canvas id="fono-daleles" aria-hidden="true"></canvas>
