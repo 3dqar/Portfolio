@@ -88,7 +88,7 @@ function loop(t){requestAnimationFrame(loop);if(!active)return;group.rotation.y=
  const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
  function update(){
   const rect=story.getBoundingClientRect();const total=Math.max(1,story.offsetHeight-innerHeight);
-  const p=clamp(-rect.top/total,0,1),slot=p*panels.length;
+  const p=clamp(-rect.top/total,0,1),slot=p*(panels.length-1);
   panels.forEach((el,i)=>{const d=slot-i,ad=Math.abs(d),visible=ad<1;
     el.style.visibility=visible?'visible':'hidden';
     el.style.opacity=visible?String(clamp(1-ad,0,1)):'0';
